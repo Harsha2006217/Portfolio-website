@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Kanaparthi - Persoonlijk Profiel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 6rem 0;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 1.5rem;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .timeline-item {
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+        }
+        .progress-bar {
+            background-color: var(--secondary-color);
+        }
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-color);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Harsha Kanaparthi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#over-mij">Over Mij</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visie">Visie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mijn-impact">Mijn Impact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reflectie">Reflectie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Welkom bij mijn Portfolio</h1>
+            <p class="lead">Software Developer in opleiding met passie voor innovatie</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="over-mij" class="mb-5 fade-in">
+            <h2 class="section-title">Over Mij</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Mijn Tijdlijn</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="timeline-item">
+                                    <h4>2006: Geboren in India</h4>
+                                    <p>De Indiase cultuur en gewoontes zijn nog steeds belangrijk voor me.</p>
+                                </li>
+                                <li class="timeline-item">
+                                    <h4>2015: Verhuisd naar Amstelveen</h4>
+                                    <p>Leerde me aan te passen aan nieuwe situaties, wat me nu nog steeds helpt.</p>
+                                </li>
+                                <li class="timeline-item">
+                                    <h4>2015-2019: Basisschool</h4>
+                                    <p>Leerde doorzetten en geduldig zijn, vooral bij het leren van Nederlands.</p>
+                                </li>
+                                <li class="timeline-item">
+                                    <h4>2019-2023: Middelbare school</h4>
+                                    <p>Ontwikkelde betere leer- en studievaardigheden.</p>
+                                </li>
+                                <li class="timeline-item">
+                                    <h4>2023-nu: MBO-4 Software Development</h4>
+                                    <p>Ontdekte mijn passie voor programmeren.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>DISC Profiel</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Mijn dominante stijl is Rood (Dominantie) met 37%</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" style="width: 37%">37%</div>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li>✓ Snel besluitvaardig</li>
+                                <li>✓ Resultaatgericht</li>
+                                <li>✓ Neemt initiatief</li>
+                            </ul>
+                            <p>Waarom rood bij mij past:</p>
+                            <ul>
+                                <li>Ik neem graag de leiding</li>
+                                <li>Ik wil graag de beste zijn</li>
+                                <li>Ik kan goed alleen werken</li>
+                                <li>Ik geef niet snel op</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h3>Mijn Waarden</h3>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li>Respect: Ik vind dat iedereen evenveel waard is.</li>
+                                <li>Eerlijkheid: Ik zeg altijd de waarheid, ook als dat moeilijk is.</li>
+                                <li>Behulpzaamheid: Ik help graag anderen.</li>
+                                <li>Geduld: Door geduldig te zijn, heb ik Nederlands geleerd.</li>
+                                <li>Ambitie: Ik wil graag een goede programmeur worden.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visie" class="mb-5 fade-in">
+            <h2 class="section-title">Mijn Visie op 2030</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>Na uitgebreid onderzoek naar trends in softwareontwikkeling, zie ik de volgende ontwikkelingen voor 2030:</p>
+                    <div class="timeline-item">
+                        <h4>Werk en Beroepen</h4>
+                        <p>Wereldwijd samenwerken wordt de norm, met focus op interdisciplinaire projecten. Ik zie mezelf werken met geavanceerde technologieën en bijdragen aan projecten die een positieve impact hebben op de wereld, vooral op het gebied van energie-efficiëntie en milieubescherming.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Onderwijs</h4>
+                        <p>Praktijkgericht leren met echte projecten staat centraal. Studenten zullen meer leren over het ethisch gebruik van technologie.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Gezondheidszorg</h4>
+                        <p>AI-ondersteunde diagnoses en gepersonaliseerde zorg worden standaard. Apps zullen precies vertellen wat we nodig hebben om gezond te blijven.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Klimaat</h4>
+                        <p>Speciale programma's zullen helpen bij het verminderen van energiegebruik en het beter zorgen voor onze planeet.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Nederland</h4>
+                        <p>Ik zie Nederland als een hub voor nieuwe techbedrijven, met een focus op veilige software en milieutechnologie.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mijn-impact" class="mb-5 fade-in">
+            <h2 class="section-title">Mijn Impact</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3>CyberSchild Project</h3>
+                    <h4>Aanleiding</h4>
+                    <p>Als software studenten zagen we hoe kwetsbaar systemen kunnen zijn. Een klasgenoot werd gehackt via social media, wat onze waarden van veiligheid en privacy raakte.</p>
+                    <h4>Persoonlijke Motivatie</h4>
+                    <p>Dit project is belangrijk voor mij omdat het mijn waarden van veiligheid en privacy raakt. Ik wil bijdragen aan een veiligere digitale wereld voor iedereen.</p>
+                    <h4>Onze Oplossing</h4>
+                    <p>We hebben "CyberSchild" ontwikkeld, bestaande uit drie delen:</p>
+                    <ul>
+                        <li>Gratis online lessen over veiligheid</li>
+                        <li>Veiligheidsapp die waarschuwt voor gevaar</li>
+                        <li>Hulplijn bij problemen</li>
+                    </ul>
+                    <h4>Keuzes en Motivatie</h4>
+                    <p>We kozen voor deze oplossing omdat het zowel preventief als reactief werkt. De online lessen en app helpen problemen te voorkomen, terwijl de hulplijn ondersteuning biedt als er toch iets misgaat.</p>
+                    <h4>Uitvoering</h4>
+                    <p>We hebben een startbudget van €50.000 en een ontwikkelingstijd van 1 jaar. We werken samen met onze school, lokale IT-bedrijven en de gemeente. Ons proces:</p>
+                    <ol>
+                        <li>Onderzoek naar de meest voorkomende cyberveiligheidsproblemen</li>
+                        <li>Ontwikkeling van de online lessen</li>
+                        <li>Creatie van de veiligheidsapp</li>
+                        <li>Opzetten van de hulplijn</li>
+                        <li>Testen en verbeteren van alle onderdelen</li>
+                    </ol>
+                    <h4>Samenwerking</h4>
+                    <p>Billy (Blauw profiel) zorgde voor de planning en deed technisch onderzoek. Ik (Rood profiel) maakte presentaties en sprak met bedrijven.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reflectie" class="mb-5 fade-in">
+            <h2 class="section-title">Reflectie</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h4>Wat ik heb geleerd</h4>
+                    <p>Dit keuzedeel heeft me veel inzichten gegeven over:</p>
+                    <ul>
+                        <li>Mijn sterke punten in teamwork</li>
+                        <li>Het belang van continue ontwikkeling in softwareontwikkeling</li>
+                        <li>Hoe ik omga met uitdagingen en nieuwe technologieën</li>
+                    </ul>
+                    <h4>Verwachtingen bij samenwerken</h4>
+                    <p>Ik verwachtte dat samenwerken uitdagend zou zijn, maar het bleek nog leerzamer dan gedacht. Ik leerde het belang van open communicatie en het waarderen van diverse perspectieven.</p>
+                    <h4>Ingezette kwaliteiten</h4>
+                    <p>Tijdens het samenwerken heb ik mijn leiderschapskwaliteiten en probleemoplossend vermogen ingezet. Dit resulteerde in efficiëntere teamvergaderingen en snellere besluitvorming.</p>
+                    <h4>Uitdagingen</h4>
+                    <p>Een grote uitdaging was het balanceren van verschillende meningen in het team. Ik loste dit op door actief te luisteren en compromissen voor te stellen, wat leidde tot betere groepsdynamiek.</p>
+                    <h4>Ontvangen Feedback</h4>
+                    <p>De 360-graden feedback heeft me geholpen om:</p>
+                    <ul>
+                        <li>Beter te plannen en mijn tijd efficiënter te gebruiken</li>
+                        <li>Actiever te luisteren naar teamgenoten</li>
+                        <li>Meer initiatief te nemen in projecten</li>
+                    </ul>
+                    <p>Ik heb deze feedback gebruikt om een dagelijkse planner te maken en bewust tijd in te plannen om naar anderen te luisteren.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>© 2025 Harsha Kanaparthi - Portfolio Website</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const fadeElems = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElems.forEach(elem => {
+                observer.observe(elem);
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
